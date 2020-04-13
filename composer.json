@@ -1,0 +1,37 @@
+{
+	"name": "hallex/assessors-and-mutators",
+	"description": "Import all methods assessors and mutators in your class",
+	"minimum-stability": "stable",
+	"type": "library",
+	"keywords": ["getters", "setters", "assessors", "mutators", "get", "set", "standard", "methods"],
+	"license": "MIT",
+	"homepage": "http://hallex.zapto.org",
+	"authors": [
+		{
+			"name": "HallexCosta",
+			"email": "hallex.costa@hotmail.com",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Resource\\Application\\": "src/app/",
+			"Resource\\Application\\Interfaces\\": "src/interfaces/",
+			"Resource\\Application\\Abstracts\\": "src/abstracts/",
+			"Resource\\Application\\Traits\\": "src/traits/",
+			"Resource\\Application\\Utils\\": "src/utils/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\Integration\\": "tests/integration/",
+			"Tests\\Unit\\": "tests/unit/"
+		}
+	},
+	"require": {
+		"php": "^7.4"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9.1"
+	}
+}
