@@ -18,7 +18,7 @@ final class Property implements PropertyInterface
      */
     public static function getName(string $method) : string
     {
-        $property = strtolower(preg_split('/^get|^set/', $method)[1]);
+        $property = lcfirst(ucwords(preg_split('/^get|^set/', $method)[1]));
         return $property;
     }
 }
